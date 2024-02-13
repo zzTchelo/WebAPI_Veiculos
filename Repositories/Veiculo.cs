@@ -77,7 +77,7 @@ namespace WebAPI.Repositories
             return veiculo;
         }
 
-        public async void AddVeiculo(Models.Veiculo veiculo)
+        public async Task AddVeiculo(Models.Veiculo veiculo)
         {
             using (_sqlConnection)
             {

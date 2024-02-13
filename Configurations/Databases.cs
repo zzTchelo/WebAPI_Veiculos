@@ -10,7 +10,7 @@ namespace WebAPI.Configurations
     {
         public static string getDatabase()
         {
-            return System.Configuration.ConfigurationManager.ConnectionStrings["lojaConnection"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["lojaConnection"].ConnectionString;
         }
         
     }
