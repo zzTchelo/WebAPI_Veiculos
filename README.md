@@ -11,6 +11,7 @@ This is a simple CRUD (Create, Read, Update, Delete) API for managing vehicle in
 - ASP.NET Core
 - SQL Server
 - RESTful API principles
+- Entity Framework
 
 ## API Endpoints
 - **Endpoint:** `/api/veiculos/{id}` or `/api/EntityVeiculos/{id}`
