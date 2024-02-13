@@ -1,7 +1,7 @@
 # Vehicle Management API (C# and SQL Server)
 
 ##Atention!!!
-You must need to change the string connection in Web.config file
+You must need to change the string connection in Web.config file to SQL Server or Startup.cs to inMemory database. 
 
 ## Overview
 This is a simple CRUD (Create, Read, Update, Delete) API for managing vehicle information, implemented in C# using ASP.NET Core and connected to a SQL Server database. The API allows users to perform operations such as adding new vehicles, retrieving vehicle details, updating existing records, and deleting vehicles from the system.
@@ -13,17 +13,15 @@ This is a simple CRUD (Create, Read, Update, Delete) API for managing vehicle in
 - RESTful API principles
 
 ## API Endpoints
+- **Endpoint:** `/api/veiculos/{id}` or `/api/EntityVeiculos/{id}`
 
 ### 1. Get All Vehicles
-- **Endpoint:** `GET /api/veiculos`
 - **Description:** Retrieve a list of all vehicles in the system.
 
 ### 2. Get Vehicle by ID
-- **Endpoint:** `GET /api/veiculos/{id}`
 - **Description:** Retrieve detailed information about a specific vehicle using its unique identifier.
 
 ### 3. Add New Vehicle
-- **Endpoint:** `POST /api/veiculos`
 - **Description:** Add a new vehicle to the system.
 - **Request Body:**
   ```json
@@ -38,7 +36,6 @@ This is a simple CRUD (Create, Read, Update, Delete) API for managing vehicle in
 
 
 ### 4. Update Vehicle
-- **Endpoint:** `PUT /api/vehicles/{id}`
 - **Description:** Update information for a specific vehicle.
 - **Request Body:**
   ```json
@@ -53,7 +50,6 @@ This is a simple CRUD (Create, Read, Update, Delete) API for managing vehicle in
 
 
 ### 5. Delete Vehicle
-- **Endpoint:** `DELETE /api/vehicles/{id}`
 - **Description:** Delete a specific vehicle from the system.
 
 ## Getting Started
