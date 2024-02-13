@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace WebAPI.Models
 {
     public class Veiculo
     {
-        public List<Veiculo> veiculos = new List<Veiculo>();
         public int Id { get; set; }
 
         [Required]
@@ -31,11 +27,5 @@ namespace WebAPI.Models
 
         [StringLength(500)]
         public string Opcionais { get; set; }
-
-        public double qtsVeiculos()
-        {
-            return veiculos.Count();
-        }
-
     }
 }

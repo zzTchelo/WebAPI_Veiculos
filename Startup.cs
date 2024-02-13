@@ -2,8 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Owin;
 using Owin;
-using System;
-using System.Threading.Tasks;
 using WebAPI.Data;
 
 [assembly: OwinStartup(typeof(WebAPI.Startup))]
